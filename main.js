@@ -14,5 +14,5 @@ function calc() {
     calculate = a * b;
   }
 
-  console.log(calculate);
+  document.querySelector('#result').innerHTML = calculate; // innerHTML inserts value between two html tags
 }
