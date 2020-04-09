@@ -7,14 +7,20 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <form>
+      Value 1: <input type="text" id="value1" /> 
+      Value 2: <input type="text" id="value2" />
+      Operator:
+      <select id="operator">
+        <option value="add">Add</option>
+        <option value="min">Minus</option>
+        <option value="div">Divide</option>
+        <option value="mul">Multiply</option>
+      </select>
+      <button type="button">Calculate</button>
+    </form>
   </body>
+  <script src="main.js"></script>
 </html>
